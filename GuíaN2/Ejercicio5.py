@@ -4,19 +4,19 @@ simbolos = {
     "TorreN": "r", "CaballoN": "n", "AlfilN": "b", "ReinaN": "q", "ReyN": "k", "PeonN": "p"
 }
 
-# Inicializar el tablero vacío
+# Iniciar tablero
 tablero = {}
 
-# Inicializar las filas y columnas
+# Iniciar filas y columnas
 columnas = "abcdefgh"
 
-# Piezas de las blancas (fila 1 y 2)
+# Piezas blancas (fila 1 y 2)
 piezas_blancas = ["TorreB", "CaballoB", "AlfilB", "ReinaB", "ReyB", "AlfilB", "CaballoB", "TorreB"]
 for i in range(8):
     tablero[columnas[i] + "1"] = piezas_blancas[i]
     tablero[columnas[i] + "2"] = "PeonB"
 
-# Piezas de las negras (fila 7 y 8)
+# Piezas negras (fila 7 y 8)
 piezas_negras = ["TorreN", "CaballoN", "AlfilN", "ReinaN", "ReyN", "AlfilN", "CaballoN", "TorreN"]
 for i in range(8):
     tablero[columnas[i] + "8"] = piezas_negras[i]
