@@ -28,7 +28,7 @@ capturadas = []
 # Bucle del juego
 while True:
     # Mostrar tablero
-    print("  a b c d e f g h")
+    print("a b c d e f g h")
     for fila in range(8, 0, -1):
         linea = str(fila) + " "
         for columna in columnas:
